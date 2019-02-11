@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Navbar styles*/
+nav {
+  background: white;
+  position: sticky;
+  top: 10px;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  margin:  10px 0;
+  padding: 0;
+  overflow: hidden;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+}
+
+li a {
+  display: block;
+  padding: 14px 16px;
+}
+
+.anchor {
+  position: relative;
+}
+
+#intro {
+  position: absolute;
+  left: 0px;
+  top: -350px;
+}
+
+#story {
+  position: absolute;
+  left: 0px;
+  top: -300px;
+}
+
+#projects {
+  position: absolute;
+  left: 0px;
+  top: -280px;
+}
+
+#li1:hover::first-letter {
+  color: #D48166;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 0 black;
+}
+
+#li2:hover::first-letter {
+  color: #96b880;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 0 black;
+}
+
+#li3:hover::first-letter {
+  color: #7DA2A9;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 0 black;
+}
+
+#li4:hover::first-letter {
+  color: #F3E367;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 0 black;
+}
+
+/*header styles*/
+header {
+  min-height: 40vh;
+  padding-top: 15vh;
+}
+
+#profile-box1 {
+  background-image: url("images/carsonmarry.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border: solid 5px black;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+}
+
+#profile-box2 {
+  background-image: url("images/carson1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  border: solid 5px black;
+  position: absolute;
+  left: 55%;
+  top: 30%;
+}
+
+#profile-text {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+}
+
+h1 {
+  margin-top: 15%;
+  margin-left: 30px;
+  padding-right: 50%;
+}
+
+/*banner styles*/
+.banner {
+  background: #D48166;
+  height: 20px;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+  margin: 50px 0;
+}
+
+#banner-story {
+  background: #96b880;
+}
+
+#banner-projects {
+  background: #7DA2A9;
+}
+
+#banner-contact {
+  background: #F3E367;
+}
+
+.banner-title {
+  background: black;
+  border: 5px solid black;
+  width: 120px;
+  height: 30px;
+  padding-top: 10px;
+  position: absolute;
+  transform: skew(-30deg);
+  left: 50px;
+}
+
+.banner-text {
+  transform: skew(30deg);
+  color: white;
+}
+
+/*Story section*/
+.story-tile {
+  background: black;
+  margin: 10px 70px;
+  padding: 15px 15px;
+  height: 80px;
+  border: solid 5px black;
+  transform: skew(-30deg);
+}
+
+.story-text {
+  transform: skew(30deg);
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #96b880;
+}
+
+.overlay-text {
+  transform: skew(30deg);
+  margin: 20px;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+/*Project section*/
+#project-banner {
+  left: 40%;
+}
+
+#project-container {
+  padding: 0 50px;
+  position: relative;
+}
+
+.project-tile {
+  background: #7DA2A9;
+  margin: 10px 10px;
+  padding: 15px 20px;
+  width: 90%;
+  border: solid 5px black;
+  transform: skew(-30deg);
+}
+
+.fun-text {
+  padding: 10px;
+}
+
+.fun-text > a {
+  color: #7DA2A9;
+  text-decoration: underline;
+}
+
+.project-text {
+  transform: skew(30deg);
+}
+
+/*Contact section*/
+#contact-banner {
+  left: 40%;
+  height: 400px;
+}
+
+.contact-tile {
+  background: #F3E367;
+  margin: 10px 70px;
+  padding: 15px 15px;
+  width: ;
+  border: solid 5px black;
+  transform: skew(-30deg);
+}
+
+.contact-text {
+  transform: skew(30deg);
+}
+
+i {
+  font-size: 25px;
+}
+
+/*Footer styles*/
+footer {
+  background: black;
+  color: white;
+  border-top: solid 5px black;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/*Media Queries*/
+@media only screen and (min-width: 1000px) {
+  #contact-banner {
+    height: 400px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #profile-box1 {
+    top: 10%;
+  }
+
+  #profile-box2 {
+    top: 18%;
+  }
+
+  .story-tile {
+    width: 30%;
+  }
+
+  #stories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #intro {
+    top: -350px;
+  }
+
+  #story {
+    top: -50px;
+  }
+
+  #projects {
+    top: -30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #fun1,
+  #fun2,
+  #fun3 {
+    padding: 10px;
+    position: absolute;
+    width: 50%;
+    right: 150px;
+    transition: opacity 2s;
+    opacity: 0;
+  }
+
+  #fun4 {
+    padding: 10px;
+    position: absolute;
+    width: 50%;
+    right: 150px;
+    bottom: 200px;
+    transition: opacity 2s;
+    opacity: 0;
+  }
+
+  #fun5 {
+    padding: 10px;
+    position: absolute;
+    width: 50%;
+    right: 150px;
+    bottom: 120px;
+    transition: opacity 2s;
+    opacity: 0;
+  }
+
+  #fun6 {
+    padding: 10px;
+    position: absolute;
+    width: 50%;
+    right: 150px;
+    bottom: 60px;
+    transition: opacity 2s;
+    opacity: 0;
+  }
+
+  .project-tile {
+    background: lightgray;
+    margin: 10px 10px;
+    padding: 15px 20px;
+    width: 200px;
+    border: solid 5px black;
+    transform: skew(-30deg);
+    transition: width 1s, background 2s;
+  }
+
+  .project-tile:hover {
+    width: 90%;
+    background: #7DA2A9;
+  }
+
+  .contact-tile:hover {
+    animation: contactmove 1s forwards;
+  }
+
+  @keyframes contactmove {
+    0%  {background: lightgray;}
+    100%  {background: #F3E367; box-shadow: -5px -5px black;}
+  }
+}
