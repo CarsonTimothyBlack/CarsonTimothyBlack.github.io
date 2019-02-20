@@ -231,7 +231,7 @@ h1 {
 /*Contact section*/
 #contact-banner {
   left: 40%;
-  height: 400px;
+  height: 500px;
 }
 
 .contact-tile {
@@ -263,7 +263,7 @@ footer {
 /*Media Queries*/
 @media only screen and (min-width: 1000px) {
   #contact-banner {
-    height: 400px;
+    height: 460px;
   }
 
   ul {
@@ -302,6 +302,9 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
+  #contact-banner {
+    height: 460px;
+  }
   #fun1,
   #fun2,
   #fun3 {
