@@ -13,7 +13,7 @@ a {
 nav {
   background: white;
   position: sticky;
-  top: 10px;
+  top: 0px;
   z-index: 1;
 }
 
@@ -161,17 +161,23 @@ h1 {
 
 /*Story section*/
 .story-tile {
-  background: black;
   margin: 10px 70px;
   padding: 15px 15px;
-  height: 80px;
+  height: 100px;
   border: solid 5px black;
   transform: skew(-30deg);
+  position: relative;
 }
 
-.story-text {
+.storText {
+  z-index: 1;
+  margin: 10px;
+  background: #96b880;
+  position: absolute;
+  top: 0;
+  left: 20%;
   transform: skew(30deg);
-  color: white;
+  font-size: 20px;
 }
 
 .overlay {
@@ -182,18 +188,14 @@ h1 {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: 1s ease;
   background-color: #96b880;
 }
 
 .overlay-text {
+  position: absolute;
+  top: 30px;
   transform: skew(30deg);
   margin: 20px;
-}
-
-.overlay:hover {
-  opacity: 1;
 }
 
 /*Project section*/
@@ -230,8 +232,7 @@ h1 {
 
 /*Contact section*/
 #contact-banner {
-  left: 40%;
-  height: 500px;
+  left: 60%;
 }
 
 .contact-tile {
@@ -262,10 +263,6 @@ footer {
 
 /*Media Queries*/
 @media only screen and (min-width: 1000px) {
-  #contact-banner {
-    height: 460px;
-  }
-
   ul {
     display: flex;
     justify-content: center;
@@ -302,9 +299,32 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
-  #contact-banner {
-    height: 460px;
+  .storText {
+    display: none;
   }
+  .story-tile {
+    background: black;
+  }
+
+  .story-text {
+    transform: skew(30deg);
+    color: white;
+  }
+
+  .overlay {
+    opacity: 0;
+    transition: 1s ease;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 10px;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+  
   #fun1,
   #fun2,
   #fun3 {
@@ -353,7 +373,7 @@ footer {
     width: 200px;
     border: solid 5px black;
     transform: skew(-30deg);
-    transition: width 1s, background 2s;
+    transition: width 1s, backgroundColor 2s;
   }
 
   .project-tile:hover {
@@ -374,3 +394,48 @@ footer {
     100%  {background: #F3E367; box-shadow: -5px -5px black;}
   }
 }
+
+/*
+.story-tile {
+  background: black;
+  margin: 10px 70px;
+  padding: 15px 15px;
+  height: 80px;
+  border: solid 5px black;
+  transform: skew(-30deg);
+  position: relative;
+}
+
+.story-text {
+  transform: skew(30deg);
+  color: white;
+}
+
+.storText {
+  z-index: 1;
+  background: white;
+  position: absolute;
+  left: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #96b880;
+}
+
+.overlay-text {
+  transform: skew(30deg);
+  margin: 20px;
+}
+
+.overlay:hover {
+  opacity: 1;
+}*/
