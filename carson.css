@@ -4,6 +4,10 @@ body {
   font-family: 'Major Mono Display', monospace;
 }
 
+.sections {
+  background: white;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -19,7 +23,7 @@ nav {
 
 ul {
   list-style-type: none;
-  margin:  10px 0;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   border-top: solid 5px black;
@@ -80,55 +84,39 @@ li a {
 
 /*header styles*/
 header {
-  min-height: 40vh;
-  padding-top: 15vh;
-}
-
-#profile-box1 {
   background-image: url("images/carsonmarry.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 300px;
-  height: 300px;
-  border: solid 5px black;
-  position: absolute;
-  left: 5%;
-  top: 25%;
+  min-height: 55vh;
+  position: sticky;
 }
 
-#profile-box2 {
-  background-image: url("images/carson1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 300px;
-  height: 400px;
-  border: solid 5px black;
-  position: absolute;
-  left: 55%;
-  top: 30%;
+#banner-intro {
+  background: #D48166;
+  background-image: linear-gradient(to left, #D48166 , white);
+  min-height: 55vh;
+  opacity: .6;
+  margin: 0;
+  border: solid .1px black;
 }
 
-#profile-text {
-  color: white;
-  position: absolute;
-  bottom: 20px;
-}
-
-h1 {
+.intro-text {
   margin-top: 15%;
-  margin-left: 30px;
-  padding-right: 50%;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+
 }
 
 /*banner styles*/
 .banner {
-  background: #D48166;
   height: 20px;
   border-top: solid 5px black;
   border-bottom: solid 5px black;
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 #banner-story {
@@ -137,10 +125,12 @@ h1 {
 
 #banner-projects {
   background: #7DA2A9;
+  margin-top: 50px;
 }
 
 #banner-contact {
   background: #F3E367;
+  margin-top: 50px;
 }
 
 .banner-title {
@@ -324,7 +314,7 @@ footer {
   .overlay:hover {
     opacity: 1;
   }
-  
+
   #fun1,
   #fun2,
   #fun3 {
