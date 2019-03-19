@@ -4,10 +4,6 @@ body {
   font-family: 'Major Mono Display', monospace;
 }
 
-.sections {
-  background: white;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -16,8 +12,9 @@ a {
 /*Navbar styles*/
 nav {
   background: white;
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -35,28 +32,25 @@ li a {
   padding: 14px 16px;
 }
 
-#li1:hover::first-letter {
-  color: #D48166;
+#li1:hover {
   text-transform: uppercase;
-  text-shadow: -2px 2px 0 black;
+  text-shadow: -2px 2px 0 #D48166;
 }
 
-#li2:hover::first-letter {
-  color: #96b880;
+#li2:hover
+ {
   text-transform: uppercase;
-  text-shadow: -2px 2px 0 black;
+  text-shadow: -2px 2px 0 #96b880;
 }
 
-#li3:hover::first-letter {
-  color: #7DA2A9;
+#li3:hover {
   text-transform: uppercase;
-  text-shadow: -2px 2px 0 black;
+  text-shadow: -2px 2px 0 #7DA2A9;
 }
 
-#li4:hover::first-letter {
-  color: #F3E367;
+#li4:hover {
   text-transform: uppercase;
-  text-shadow: -2px 2px 0 black;
+  text-shadow: -2px 2px 0 #F3E367;
 }
 
 /*Navigation polish*/
@@ -84,31 +78,22 @@ li a {
 
 /*header styles*/
 header {
-  background-image: url("images/carsonmarry.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 55vh;
-  position: sticky;
+  margin-top: 200px;
 }
 
-#banner-intro {
-  background: #D48166;
-  background-image: linear-gradient(to left, #D48166 , white);
-  min-height: 55vh;
-  opacity: .6;
-  margin: 0;
-  border: solid .1px black;
+#profile-picture {
+  background-image: url("images/carsonmarry.jpg");
+  background-repeat: ;
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  border: solid 5px black;
+  margin: 10px auto;
 }
 
 .intro-text {
-  margin-top: 15%;
-  margin-left: 10px;
   font-size: 30px;
-  font-weight: bold;
-  z-index: 1;
-  position: absolute;
-  text-align: left;
-
+  margin: 50px 0;
 }
 
 /*banner styles*/
@@ -117,6 +102,10 @@ header {
   border-top: solid 5px black;
   border-bottom: solid 5px black;
   margin-bottom: 50px;
+}
+
+#banner-intro {
+  background: #D48166;
 }
 
 #banner-story {
@@ -141,7 +130,7 @@ header {
   padding-top: 10px;
   position: absolute;
   transform: skew(-30deg);
-  left: 50px;
+  left: 100px;
 }
 
 .banner-text {
@@ -189,10 +178,6 @@ header {
 }
 
 /*Project section*/
-#project-banner {
-  left: 40%;
-}
-
 #project-container {
   padding: 0 50px;
   position: relative;
@@ -221,10 +206,6 @@ header {
 }
 
 /*Contact section*/
-#contact-banner {
-  left: 60%;
-}
-
 .contact-tile {
   background: #F3E367;
   margin: 10px 70px;
@@ -258,16 +239,17 @@ footer {
     justify-content: center;
   }
 
-  #profile-box1 {
-    top: 10%;
-  }
-
-  #profile-box2 {
-    top: 18%;
+  header {
+    margin-top: 100px;
   }
 
   .story-tile {
     width: 30%;
+  }
+
+  #profile-picture {
+    width: 60%;
+    height: 400px;
   }
 
   #stories {
