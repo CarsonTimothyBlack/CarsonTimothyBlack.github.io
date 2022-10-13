@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../carson.css">
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </head>
     <body class="album-landing">
         <div class="hero-banner">
@@ -17,11 +19,367 @@
         </div>
         <h2><em>Under Development</em></h2>
         <br>
+        <h1 class="page-header">Albums</h1>
         <div class="album-container">
-            <h1 class="page-header">Albums</h1>
-            <div class="album-box">
+            <div class="album-selection">
+                <div class="album-slider-wrapper">
+                    <div class="row">
+                       <div class="col-xs-12">
+                          <div class="swiper album-swiper">
+                             <!-- Additional required wrapper -->
+                             <div class="swiper-wrapper">
+                                 <div class="swiper-slide" onclick="showAlbum('crator')">
+                                     <img src="../images/album covers/crator.jpg" alt="Crator of Almost cover">
+                                     <div class="album-name">Crator of Almost</div>
+                                 </div>
+
+                                 <div class="swiper-slide" onclick="showAlbum('casted')">
+                                    <img src="../images/album covers/casted.jpg" alt="Casted Vows cover">
+                                    <div class="album-name">Casted Vows</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('burdens')">
+                                    <img src="../images/album covers/burdens.jpg" alt="Burdens of a Foreign Soul cover">
+                                    <div class="album-name">Burdens of a Foreign Soul</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('underground')">
+                                    <img src="../images/album covers/underground.webp" alt="Songs from the Undergound cover">
+                                    <div class="album-name">Songs from the Undergound</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('story')">
+                                    <img src="../images/album covers/story.png" alt="Story cover">
+                                    <div class="album-name">Story</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('easy')">
+                                    <img src="../images/album covers/easy.png" alt="It Does Not Come Easy cover">
+                                    <div class="album-name">It Does Not Come Easy</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('loFi1')">
+                                    <img src="../images/album covers/lo-fi-2.jpg" alt="Lo-Fi Apprentice I cover">
+                                    <div class="album-name">Lo-Fi Apprentice (and that same journal continues) Vol I</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('loFi2')">
+                                    <img src="../images/album covers/lo-fi-1.jpg" alt="Lo-Fi Apprentice II cover">
+                                    <div class="album-name">Lo-Fi Apprentice (and that same journal continues) Vol II</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('design')">
+                                    <img src="../images/album covers/design.jpeg" alt="Design for growing callusses cover">
+                                    <div class="album-name">Design for Growing Callus</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('virtual')">
+                                    <img src="../images/album covers/virtual.jpg" alt="Virtual Symphonies cover">
+                                    <div class="album-name">Virtual Symphonies</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('miscSongs')">
+                                    <img src="../images/album covers/misc-songs.jpg" alt="Misc. Songs cover">
+                                    <div class="album-name">Misc. Songs</div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="row pagination-row">
+                       <div class="album-swiper-pagination">
+                          <!-- Pagination -->
+                          <div class="swiper-pagination">
+                
+                         </div>
+                       </div>
+                       <div class="album-swiper-arrows">
+                          <!-- If we need navigation buttons -->
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+                       </div>
+                    </div>
+                 </div>
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function(){
+                        var swiper = new Swiper('.album-swiper', {
+                            pagination: {
+                                el: '.swiper-pagination',
+                                type: 'bullets',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                            breakpoints: {
+                            // when window width is >= 320px
+                            320: {
+                                slidesPerView: 1,
+                                slidesPerGroup: 1,
+                                spaceBetween: 10
+                            },
+                            // when window width is >= 480px
+                            768: {
+                                slidesPerView: 2,
+                                slidesPerGroup: 2,
+                                spaceBetween: 20
+                            },
+                            // when window width is >= 640px
+                            992: {
+                                slidesPerView: 4,
+                                slidesPerGroup: 4,
+                                spaceBetween: 20
+                            }
+                            }
+                        })
+                    });
+                  </script>
+            </div>
+
+            <div class="album-box hidden" id="crator">
+                <div class="album-title">Crator of Almost</div>
+                <div class="album-copyright">Copyright 1998</div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 Early Outer Limit</div>
+                        <audio src="/music/Crator of Almost/01 Early Outer Limits.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 Yellow 7</div>
+                        <audio src="/music/Crator of Almost/02 Yellow 7s.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 Oh Sweet Slider</div>
+                        <audio src="/music/Crator of Almost/03 Oh Sweet Slider.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 Morning Gorge</div>
+                        <audio src="/music/Crator of Almost/04 Morning Gorge.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 Almost</div>
+                        <audio src="/music/Crator of Almosts/05 Almost.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Limp Needle</div>
+                        <audio src="/music/Crator of Almost/06 Limp Needle.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 Crave</div>
+                        <audio src="/music/Crator of Almost/07 Crave.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Blossom Philos</div>
+                        <audio src="/music/Crator of Almost/08 Blossom Philos.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Gut Bucket</div>
+                        <audio src="/music/Crator of Almost/09 Gut Bucket.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 Rebirth</div>
+                        <audio src="/music/Crator of Almost/10 Rebirth.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">11 Lucid Farming</div>
+                        <audio src="/music/Crator of Almost/11 Lucid Farming.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">12 Good Earth</div>
+                        <audio src="/music/Crator of Almost/12 Good Earth.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-box hidden" id="casted">
+                <div class="album-title">Casted Vows</div>
+                <div class="album-copyright">Copyright 1999</div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 Fault of Fire</div>
+                        <audio src="/music/Casted Vows/13 Fault of Fire.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 Ice Fear</div>
+                        <audio src="/music/Casted Vows/14 Ice Fear.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 The Outer Limit</div>
+                        <audio src="/music/Casted Vows/15 The Outer Limit.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 Exotic Growth</div>
+                        <audio src="/music/Casted Vows/16 Exotic Growth.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 Runaway Hero</div>
+                        <audio src="/music/Casted Vows/17 Runaway Hero.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Casted Vows</div>
+                        <audio src="/music/Casted Vows/18 Casted Vows.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 Russian Roulet</div>
+                        <audio src="/music/Casted Vows/19 Russian Roulet.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Old Town Jangster</div>
+                        <audio src="/music/Casted Vows/20 Old Town Jangster.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Sorry to Leave</div>
+                        <audio src="/music/Casted Vows/21 Sorry to Leave.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 Regional Threats</div>
+                        <audio src="/music/Casted Vows/22 Regional Threats.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-box hidden" id="burdens">
+                <div class="album-title">Burdens of a Foreign Soul</div>
+                <div class="album-copyright">Copyright 2000</div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 Holocaust</div>
+                        <audio src="/music/Burdens of a Foreign Soul/23 Holocaust.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 Grass Blower</div>
+                        <audio src="/music/Burdens of a Foreign Soul/24 Grass Blower.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 Backshot</div>
+                        <audio src="/music/Burdens of a Foreign Soul/25 Backshot.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 Burdens of a Foreign Soul</div>
+                        <audio src="/music/Burdens of a Foreign Soul/26 Burdens of a Foreign Soul.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 An Off Day</div>
+                        <audio src="/music/Burdens of a Foreign Soul/27 An Off Day.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 China's Last Hope</div>
+                        <audio src="/music/Burdens of a Foreign Soul/28 China's Last Hope.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 Favorite Sister</div>
+                        <audio src="/music/Burdens of a Foreign Soul/29 Favorite Sister.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Ride the Starts</div>
+                        <audio src="/music/Burdens of a Foreign Soul/30 Ride the Starts.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 City of Refuge</div>
+                        <audio src="/music/Burdens of a Foreign Soul/31 City of Refuge.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 Dance of the Virgins</div>
+                        <audio src="/music/Burdens of a Foreign Soul/32 Dance of the Virgins.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-box hidden" id="underground">
+                <div class="album-title">Songs from the Undergound</div>
+                <div class="album-copyright">Copyright 2001</div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 Song 'a' Bong</div>
+                        <audio src="/music/Songs From The Underground/01 Song a Bong.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 The Truth</div>
+                        <audio src="/music/Songs From The Underground/02 The Truth.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 Maybe It's Near</div>
+                        <audio src="/music/Songs From The Underground/03 Maybe It's Near.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 2nd Russian Roullet</div>
+                        <audio src="/music/Songs From The Underground/04 2nd Russian Roullet.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 Bird of my deep Bell</div>
+                        <audio src="/music/Songs From The Underground/05 Bird of my deep Bell.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Collect</div>
+                        <audio src="/music/Songs From The Underground/06 Collect.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 Mysantonian</div>
+                        <audio src="/music/Songs From The Underground/07 Mysantonian.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Monotony</div>
+                        <audio src="/music/Songs From The Underground/08 Monotony.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Her Extreme</div>
+                        <audio src="/music/Songs From The Underground/09 Her Extreme.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 In my Heart Savior</div>
+                        <audio src="/music/Songs From The Underground/10 In my Heart Savior.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">11 Empty Pocket</div>
+                        <audio src="/music/Songs From The Underground/11 Empty Pocket.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">12 Lesser Evil</div>
+                        <audio src="/music/Songs From The Underground/12 Lesser Evil.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">13 Almost</div>
+                        <audio src="/music/Songs From The Underground/13 Almost.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">14 I'm Sick, Nic Lady</div>
+                        <audio src="/music/Songs From The Underground/14 I'm Sick, Nice Lady.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">15 Crisis Agamemnon</div>
+                        <audio src="/music/Songs From The Underground/15 Crisis Agamemnon.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-box hidden" id="story">
+                <div class="album-title">Story</div>
+                <div class="album-copyright">Copyright 2002</div>
+                <div class="songs-container"></div>
+            </div>
+
+            <div class="album-box hidden" id="easy">
+                <div class="album-title">It Does Not Come Easy</div>
+                <div class="album-copyright">Copyright 2003</div>
+                <div class="songs-container"></div>
+            </div>
+
+            <div class="album-box hidden" id="loFi1">
+                <div class="album-title">Lo-Fi Apprentice (and that same journal continues) Vol I</div>
+                <div class="album-copyright">Copyright 2005</div>
+                <div class="songs-container"></div>
+            </div>
+
+            <div class="album-box hidden" id="loFi2">
+                <div class="album-title">Lo-Fi Apprentice (and that same journal continues) Vol II</div>
+                <div class="album-copyright">Copyright 2005</div>
+                <div class="songs-container"></div>
+            </div>
+
+            <div class="album-box hidden" id="design">
                 <div class="album-title">Design for Growing Callus</div>
-                <div class="album-copyright">Recorded and published on 2008</div>
+                <div class="album-copyright">Copyright 2000</div>
                 <div class="songs-container">
                     <div class="song-box">
                         <div class="song-title">1 Calluses</div>
@@ -93,6 +451,22 @@
                     </div>
                 </div>
             </div>
+
+            <div class="album-box hidden" id="virtual">
+                <div class="album-title">Virtual Symphonies</div>
+                <div class="album-copyright">Circa 2002</div>
+                <div class="songs-container"></div>
+            </div>
+
+            <div class="album-box hidden" id="miscSongs">
+                <div class="album-title">Misc. Songs</div>
+                <div class="album-copyright">Circa 2008</div>
+                <div class="songs-container"></div>
+            </div>
+
         </div>
+
+
+        <script src="../carson.js"></script>
     </body>
 </html>
