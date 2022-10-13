@@ -1,166 +1,225 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Carson Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This site acts as a portfolio for Carson Black, a Front-end Software Engineer for WebMD. This is mainly to showcase his professional and personal portfolio.">
+    <meta name="author" content="Carson Timothy Black">
+    <title>Carson Timothy Black - Front-end Software Engineer</title>
     <link rel="stylesheet" type="text/css" href="carson.css">
-    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
-    <nav id="navbar">
-      <ul>
-        <li id="li1"><a href="#intro">introduction</a></li>
-        <li id="li2"><a href="#story">story</a></li>
-        <li id="li3"><a href="#projects">projects</a></li>
-        <li id="li4"><a href="#contact">contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="anchor">
-      <a id="intro" name="intro"></a>
+    <div class="container1 site-section">
+      <div class="container">
+        <div class="content-box">
+          <div class="page-title">
+            <h1>Carson <br>Black</h1>
+          </div>
+          <div class="site-nav">
+            <a class="nav-link" href="#aboutMe"><span class="material-symbols-outlined">north_east</span>About Me</a>
+            <a class="nav-link" href="#professional"><span class="material-symbols-outlined">north_east</span>Professional Portfolio</a>
+            <a class="nav-link" href="#personal"><span class="material-symbols-outlined">north_east</span>Personal Projects</a>
+            <a class="nav-link" href="#coreValues"><span class="material-symbols-outlined">north_east</span>My Core Values</a>
+          </div>
+        </div>
+        <div class="image-box">
+          <img class="img-responsive" src="images/carsonmarry.jpg" alt="placeholder">
+        </div>
+      </div>
     </div>
-    <header>
-      <div id="profile-picture"></div>
-      <div class="banner-title">
-        <div class="banner-text">INTRO</div>
-      </div>
-      <div id="banner-intro" class="banner"></div>
-      <div class="intro-text">
-      <p>My name is Carson Black.</p>
-      <p>I love to code!</p>
-      <p>Here is my story.</p>
-      </div>
-    </header>
 
-    <div class="anchor">
-      <a id="story" name="story"></a>
+    <a name="aboutMe" id="aboutMe"></a>
+    <div class="container2 site-section">
+      <div class="container">
+        <div class="image-box">
+          <img class="img-responsive" src="images/about.png" alt="placeholder">
+        </div>
+        <div class="content-box">
+          <div class="about-me-title">
+            About Me
+          </div>
+          <div class="about-me">
+            I am an enthusiastic and experienced Front-end developer with a tenacious appetite to learn new technologies. It has been a long-term goal of mine to break into a professional Full Stack position, where I can truly dig into the abstract, server-side of programming. I am eager to continue developing my Front-end skills, while rigorously deepening my knowledge of Back-end technologies.
+          </div>
+          <div class="section-title">
+            Contact
+          </div>
+          <div class="contact-box">
+            <div class="contact-item">
+              <a href="https://www.linkedin.com/in/carson-black-4b77bb17b/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            </div>
+            <div class="contact-item">
+              <a href="https://github.com/CarsonTimothyBlack" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <section class="sections">
-      <div class="banner-title">
-        <div class="banner-text">STORY</div>
-      </div>
-      <div  id="banner-story" class="banner"></div>
-      <div id="stories">
-        <div class="story-tile">
-          <div class="story-text">I am...</div>
-          <div class="storText">I am...</div>
-          <div class="overlay">
-            <div class="overlay-text">...a man who loves playing games, building things, and solving puzzles.</div>
-          </div>
-        </div>
-        <div class="story-tile">
-          <div class="story-text">One day...</div>
-          <div class="storText">One day...</div>
-          <div class="overlay">
-            <div class="overlay-text">...I stumbled upon a book that taught me how to make my very first web page.</div>
-          </div>
-        </div>
-        <div class="story-tile">
-          <div class="story-text">The page said...</div>
-          <div class="storText">The page said...</div>
-          <div class="overlay">
-            <div class="overlay-text">..."Hello, World!" Very original! ...ok. Not really. But I was, nonetheless, hooked!</div>
-          </div>
-        </div>
-        <div class="story-tile">
-          <div class="story-text">And now...</div>
-          <div class="storText">And now...</div>
-          <div class="overlay">
-            <div class="overlay-text">...I spend my days coding games, building sites, and puzzling through algorithms. What joy! </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <div class="anchor">
-      <a id="projects" name="story"></a>
+    <a name="professional" id="professional"></a>
+    <div class="container3 site-section">
+      <div class="container">
+        <div class="content-box">
+          <div class="section-title">
+            Professional Portfolio
+          </div>
+          <div class="portfolio-items">
+            <div class="item-box">
+              <a href="https://www.atlanticare.org/" target="_blank">
+                <span class="material-symbols-outlined">
+                  north_east
+                  </span>
+                <div class="item-info">
+                  <div class="item-title">Atlanticare</div>
+                  <div class="item-description">I was the sole developer for Atlanticare's recent, site-wide redesign. A year-long development project that launched in March 2022.</div>
+                </div>
+              </a>
+            </div>
+            <div class="item-box">
+              <a href="https://www.trinity-health.org/" target="_blank">
+                <span class="material-symbols-outlined">
+                  north_east
+                  </span>
+                <div class="item-info">
+                  <div class="item-title">Trinity Personalization Campaign</div>
+                  <div class="item-description">
+                    I was lead developer for Trinity's recent organization-wide personalization campaign, which presents specific content to individual users, based on the Persona chosen when visiting a site's homepage.</div>
+                </div>
+              </a>
+            </div>
+            <div class="item-box">
+              <a href="https://www.trinity-health.org/our-stories/" target="_blank">
+                <span class="material-symbols-outlined">
+                  north_east
+                  </span>
+                <div class="item-info">
+                  <div class="item-title">Trinity Personalization Campaign</div>
+                  <div class="item-description">
+                    I was lead developer for Trinity's organization-wide Brand Journalism blog sub-sites. These blog landing pages are implemented on over 18 Trinity sites now!</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="image-box">
+          <img class="img-responsive" src="images/professional.png" alt="placeholder">
+        </div>
+      </div>
     </div>
-    <section class="sections">
-      <div class="banner-title">
-        <div class="banner-text">PROJECTS</div>
+
+    <a name="personal" id="personal"></a>
+    <div class="container4 site-section">
+      <div class="container">
+        <div class="image-box">
+          <img class="img-responsive" src="images/personal.png" alt="placeholder">
+        </div>
+        <div class="content-box">
+          <div class="section-title">
+            Personal Projects
+          </div>
+          <div class="portfolio-items">
+            <div class="item-box">
+              <a href="https://carsontimothyblack.github.io/StoryMaker-2000/" target="_blank">
+                <span class="material-symbols-outlined">
+                  north_east
+                  </span>
+                <div class="item-info">
+                  <div class="item-title">Story Maker 2000</div>
+                  <div class="item-description">This was one of my first web projects. This was an attempt to practice some Sass and have something to show Healthgrades on my 2nd interview with them. I had to demenstrate that, first, I had the determination to fill any knowledge gaps for the job, and second, that I was already somewhat competant and creative with Front-end technologies. This page works as a dynamic Mad Libs. Fill out the fields with appropriate words, click on the story type, then click "Publish Story" at the bottom.</div>
+                </div>
+              </a>
+            </div>
+            <div class="item-box">
+              <a href="https://carsontimothyblack.github.io/Blackjack-Story/" target="_blank">
+                <span class="material-symbols-outlined">
+                  north_east
+                  </span>
+                <div class="item-info">
+                  <div class="item-title">Blackjack</div>
+                  <div class="item-description">
+                    A more recent project. I don't often get a chance to program a full application, but have a dream of doing some game development. This was a challenge to myself to see if I could use my JS experience to re-create a basic game of Blackjack. Eventually, I want to add a story element to it. For example, after 5 hands, you can order a drink. After a couple drinks, your "Hit" or "Stand" buttons don't always do what you want them to.</div>
+                </div>
+              </a>
+            </div>
+            <div class="item-box">
+              <a href="https://github.com/CarsonTimothyBlack/JavaScript-Algorithms/tree/master" target="_blank">
+                <span class="material-symbols-outlined">
+                  north_east
+                  </span>
+                <div class="item-info">
+                  <div class="item-title">Algorithms</div>
+                  <div class="item-description">
+                    Algorithms were, and still are, my favorite way to expand and test my JavaScript abilities. Since I was a kid, I've always enjoyed a good puzzle game. Algorithms are like the best puzzle game ever! This is just a link to my github repo, where I stored a bunch of puzzles and solutions.</div>
+                </div>
+              </a>
+            </div>
+            <div class="item-box">
+              <a href="music/music-landing.html">
+                <span class="material-symbols-outlined">
+                  north_east
+                  </span>
+                <div class="item-info">
+                  <div class="item-title">Home Recordings</div>
+                  <div class="item-description">
+                    I wasn't always a Front-end Software Engineer. No! For a long time, I wanted to be a professional musician. But, I didn't really want to do more than just record music. So, I did. Quite often. At home. This page is an archive of home recorded albums between 1996 and 2015.</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="banner-projects" class="banner"></div>
+    </div>
 
-      <p class="fun-text">Below is a collection of works that show my progress from newbie to...not so newbie.</p>
-      <div id="project-container">
-<!--
-        <a id="project1" href="https://carsontimothyblack.github.io/Tribute-Page/" target="_blank">
-          <img src="images/tribute-page.jpeg" alt="tribute page" height="200px" width="300px" />
-        </a>
-!-->
-        <a id="project1" href="https://carsontimothyblack.github.io/Tribute-Page/" target="_blank">
-          <div class="project-tile">
-            <div class="project-text">Tribute Page</div>
+    <a name="coreValues" id="coreValues"></a>
+    <div class="container5 site-section core-values">
+      <div class="container">
+        <div class="content-box">
+          <div class="section-title">
+            My Core Values
           </div>
-        </a>
-        <p id="fun1" class="fun-text">This was the very first project I did with freeCodeCamp and was also my first real website I made, after learning basic HTML. We were supposed to make a tribute page to someone, and I, of course, chose my beautiful daughter, Pearl! I experimented with almost every element I knew at that point, by including them on this site, which makes it a little busy, I know. I knew just enough CSS to change background and text colors, which, despite the simplicity, was quite a thrill to see in action. Though it looks shabby now, I am proud of it as a first step in my story.</p>
-        <a id="project2" href="https://carsontimothyblack.github.io/Product-Landing-Page/" target="_blank">
-          <div class="project-tile">
-            <div class="project-text">Product Page</div>
+          <div class="value-box">
+            <div class="value-item">
+              <img src="images/core_value1.png" alt="triangle graphic">
+              <div class="value-title">Assume Positive Intent</div>
+              <div class="value-description">Strive to understand my clients' or teammates' point of view, and take all criticism as an opportunity to learn and grow.</div>
+            </div>
+            <div class="value-item">
+              <img src="images/core_value2.png" alt="circle graphic">
+              <div class="value-title">Provide Positive Intent</div>
+              <div class="value-description">Approach every interaction with a positive attitude, with a willingness to overcome any obsticle.</div>
+            </div>
+            <div class="value-item">
+              <img src="images/core_value3.png" alt="diamond graphic">
+              <div class="value-title">Ownership of Work</div>
+              <div class="value-description">Work with integrity and transparency, putting the best work forward.</div>
+            </div>
+            <div class="value-item">
+              <img src="images/core_value4.png" alt="arrow graphic">
+              <div class="value-title">Relentlessly Pursue Solutions</div>
+              <div class="value-description">Never let a problem go unsolved, using every resource, be it teammates, Google, or books, to find the answer.</div>
+            </div>
+            <div class="value-item">
+              <img src="images/core_value5.png" alt="iconic graphic">
+              <div class="value-title">Humble Willingness to Learn</div>
+              <div class="value-description">Always ready to learn new things, and improve upon current skills.</div>
+            </div>
+            <div class="value-item">
+              <img src="images/core_value6.png" alt="radio wave graphic">
+              <div class="value-title">Serve with Patience</div>
+              <div class="value-description">Focus on others' needs first, reaching out to serve with a humble heart.</div>
+            </div>
           </div>
-        </a>
-        <p id="fun2" class="fun-text">This product landing page was the third project I did with freeCodeCamp in my quest to earn their Responsive Web Design Certification. With this project, I began to have a better grasp of the css box model, learned how to make sticky headers, and experiemented with some responsive media queries. I even included some very simple JavaScript to alert the user when a product has been added to the cart. Just like a real product site! Sort of.</p>
-        <a id="project3" href="https://carsontimothyblack.github.io/Technical-Documentation-Page/" target="_blank">
-          <div class="project-tile">
-            <div class="project-text">Technical Page</div>
-          </div>
-        </a>
-        <p id="fun3" class="fun-text">This Technical Documentation Page is the fourth project I did with freeCodeCamp. To be honest, this one was a little easy, compared to the Product Landing Page. Or maybe I was just getting more comfortable. Either way, this project was still fulfilling, in that it gave me a chance to put my loosely scrawled JavaScript notes on an official and "authoritative" internet page.</p>
-        <a id="project4" href="https://carsontimothyblack.github.io/StoryMaker-2000/" target="_blank">
-          <div class="project-tile">
-            <div class="project-text">StoryMaker-2000</div>
-          </div>
-        </a>
-        <p id="fun4" class="fun-text">Basically on online MadLibs, this StoryMaker was an attempt to practice and quicly learn Sass for an upcoming interview. I had been wanting to make a web app like this for a while, though, and felt that I now had the JavaScript chops to pull it off. Fill in the blanks, select a story genre and hit publish!</p>
-        <a id="project5" href="https://carsontimothyblack.github.io/Breakout-Game/" target="_blank">
-          <div class="project-tile">
-            <div class="project-text">Breakout Game</div>
-          </div>
-        </a>
-        <p id="fun5" class="fun-text">This Breakout Game was my first swing at game development. Though I followed a tutorial on <a href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript" target="_blank">mdn</a> step by step to produce this, I still learned a lot on the way, and derived great satisfaction from the process. I have since then, done some tweeks to the code to make the game a little more "gamey". This project has launched a desire to explore other game dev tutorials and start attempting to make originals.</p>
-        <a id="project6" href="https://github.com/CarsonTimothyBlack/Algorithms/tree/master" target="_blank">
-          <div class="project-tile">
-            <div class="project-text">Algorithms</div>
-          </div>
-        </a>
-        <p id="fun6" class="fun-text">This is a github collection of JavaScript algorithms I have solved. I keep adding to it, as I solve more. I love these things!</p>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section id="contact" class="sections">
-      <div class="banner-title">
-        <div class="banner-text">CONTACT</div>
-      </div>
-      <div id="banner-contact" class="banner"></div>
 
-      <a href="https://github.com/CarsonTimothyBlack" target="_blank">
-        <div class="contact-tile">
-          <div class="contact-text"><i class="fab fa-github"></i> Github</div>
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/in/carson-black-4b77bb17b/" target="_blank">
-        <div class="contact-tile">
-          <div class="contact-text"><i class="fab fa-linkedin"></i> linkedin</div>
-        </div>
-      </a>
-      <a href="https://teamtreehouse.com/carsonblack" target="_blank">
-        <div class="contact-tile">
-          <div class="contact-text"><img src="images/treehouse.png" alt="Treehouse logo" height="25px" width="25px" /> Treehouse</div>
-        </div>
-      </a>
-      <a href="https://www.freecodecamp.org/anthologist" target="_blank">
-        <div class="contact-tile">
-          <div class="contact-text"><i class="fab fa-free-code-camp"></i> freeCodeCamp</div>
-        </div>
-      </a>
-      <a href="https://www.codewars.com/users/anthologist" target="_blank">
-        <div class="contact-tile">
-          <div class="contact-text"><img src="images/codewars.png" alt="codewars logo" height="25px" width="25px" /> Codewars</div>
-        </div>
-      </a>
-    </section>
 
-    <footer>Copyright 2019</footer>
+    <!-- <footer>Copyright 2022</footer> -->
     <script src="jquery-3.3.1.min.js"></script>
     <script src="carson.js"></script>
   </body>
