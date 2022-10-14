@@ -3,5 +3,10 @@ function showAlbum(albumName) {
     for (const box of albumBoxes) {
         box.classList.add("hidden");
     }
-    document.getElementById(albumName).classList.remove("hidden")
+    document.getElementById(albumName).classList.remove("hidden");
+    location.hash = "albumOpen";
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    location.hash = '';
+});
