@@ -17,8 +17,7 @@
             <div class="hero text">Home Recordings</div>
             <div class="hero-overlay"></div>
         </div>
-        <h2><em>Under Development</em></h2>
-        <br>
+        <a name="albumOpen" id="albumOpen"></a>
         <h1 class="page-header">Albums</h1>
         <div class="album-container">
             <div class="album-selection">
@@ -71,6 +70,11 @@
                                 <div class="swiper-slide" onclick="showAlbum('design')">
                                     <img src="../images/album covers/design.jpeg" alt="Design for growing callusses cover">
                                     <div class="album-name">Design for Growing Callus</div>
+                                </div>
+
+                                <div class="swiper-slide" onclick="showAlbum('wife')">
+                                    <img src="../images/album covers/wife.png" alt="Wife Tale cover">
+                                    <div class="album-name">Wife Tale</div>
                                 </div>
 
                                 <div class="swiper-slide" onclick="showAlbum('virtual')">
@@ -138,16 +142,19 @@
             </div>
 
             <div class="album-box hidden" id="crator">
-                <div class="album-title">Crator of Almost</div>
-                <div class="album-copyright">Copyright 1998</div>
+                <div class="info-container">
+                    <div class="album-title">Crator of Almost</div>
+                    <div class="album-copyright">Copyright 1998</div>
+                    <img src="../images/album covers/crator.jpg" alt="Crator of Almost cover">
+                </div>
                 <div class="songs-container">
                     <div class="song-box">
                         <div class="song-title">1 Early Outer Limit</div>
-                        <audio src="/music/Crator of Almost/01 Early Outer Limits.mp3" controls type="audio/mpeg"></audio>
+                        <audio src="/music/Crator of Almost/01 Early Outer Limit.mp3" controls type="audio/mpeg"></audio>
                     </div>
                     <div class="song-box">
                         <div class="song-title">2 Yellow 7</div>
-                        <audio src="/music/Crator of Almost/02 Yellow 7s.mp3" controls type="audio/mpeg"></audio>
+                        <audio src="/music/Crator of Almost/02 Yellow 7.mp3" controls type="audio/mpeg"></audio>
                     </div>
                     <div class="song-box">
                         <div class="song-title">3 Oh Sweet Slider</div>
@@ -159,7 +166,7 @@
                     </div>
                     <div class="song-box">
                         <div class="song-title">5 Almost</div>
-                        <audio src="/music/Crator of Almosts/05 Almost.mp3" controls type="audio/mpeg"></audio>
+                        <audio src="/music/Crator of Almost/05 Almost.mp3" controls type="audio/mpeg"></audio>
                     </div>
                     <div class="song-box">
                         <div class="song-title">6 Limp Needle</div>
@@ -193,8 +200,11 @@
             </div>
 
             <div class="album-box hidden" id="casted">
-                <div class="album-title">Casted Vows</div>
-                <div class="album-copyright">Copyright 1999</div>
+                <div class="info-container">
+                    <div class="album-title">Casted Vows</div>
+                    <div class="album-copyright">Copyright 1999</div>
+                    <img src="../images/album covers/casted.jpg" alt="Casted Vows cover">
+                </div>
                 <div class="songs-container">
                     <div class="song-box">
                         <div class="song-title">1 Fault of Fire</div>
@@ -240,8 +250,11 @@
             </div>
 
             <div class="album-box hidden" id="burdens">
-                <div class="album-title">Burdens of a Foreign Soul</div>
-                <div class="album-copyright">Copyright 2000</div>
+                <div class="info-container">
+                    <div class="album-title">Burdens of a Foreign Soul</div>
+                    <div class="album-copyright">Copyright 2000</div>
+                    <img src="../images/album covers/burdens.jpg" alt="Burdens of a Foreign Soul cover">
+                </div>
                 <div class="songs-container">
                     <div class="song-box">
                         <div class="song-title">1 Holocaust</div>
@@ -287,8 +300,11 @@
             </div>
 
             <div class="album-box hidden" id="underground">
-                <div class="album-title">Songs from the Undergound</div>
-                <div class="album-copyright">Copyright 2001</div>
+                <div class="info-container">
+                    <div class="album-title">Songs from the Undergound</div>
+                    <div class="album-copyright">Copyright 2001</div>
+                    <img src="../images/album covers/underground.webp" alt="Songs from the Undergound cover">
+                </div>
                 <div class="songs-container">
                     <div class="song-box">
                         <div class="song-title">1 Song 'a' Bong</div>
@@ -354,32 +370,275 @@
             </div>
 
             <div class="album-box hidden" id="story">
-                <div class="album-title">Story</div>
-                <div class="album-copyright">Copyright 2002</div>
-                <div class="songs-container"></div>
+                <div class="info-container">
+                    <div class="album-title">Story</div>
+                    <div class="album-copyright">Copyright 2002</div>
+                    <img src="../images/album covers/story.png" alt="Story cover">
+                </div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 Civilianman's Evolution</div>
+                        <audio src="/music/Story/01 Civilianman's Evolution.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 Tribute to Indifference</div>
+                        <audio src="/music/Story/02 Tribute to Indifference.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 Fairy Wings</div>
+                        <audio src="/music/Story/03 Fairy Wings.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 The Empty Shells of Civilization</div>
+                        <audio src="/music/Story/04 The Empty Shells of Civilization.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 Dependence Guidance</div>
+                        <audio src="/music/Story/05 Dependence_Guidance.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Another Shot at the World</div>
+                        <audio src="/music/Story/06 Another Shot at the World.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 That Life I Never Had</div>
+                        <audio src="/music/Story/07 That Life I Never Had.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Welcome Child</div>
+                        <audio src="/music/Story/08 Welcome Child.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Joy Introduction</div>
+                        <audio src="/music/Story/09 Joy Introduction.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 Inward Joy</div>
+                        <audio src="/music/Story/10 Inward Joy.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">11 Sorrow Introduction</div>
+                        <audio src="/music/Story/11 Sorrow Introduction.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">12 Outward Sorrow</div>
+                        <audio src="/music/Story/12 Outward Sorrow.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">13 Coming From Me</div>
+                        <audio src="/music/Story/13 Coming From Me.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">14 Some Small Victory</div>
+                        <audio src="/music/Story/14 Some Small Victory.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">15 Somebody, Save My Life</div>
+                        <audio src="/music/Story/15 Somebody, Save My Life.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">16 Anthem of the Saved</div>
+                        <audio src="/music/Story/16 Anthem of the Saved.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
             </div>
 
             <div class="album-box hidden" id="easy">
-                <div class="album-title">It Does Not Come Easy</div>
-                <div class="album-copyright">Copyright 2003</div>
-                <div class="songs-container"></div>
+                <div class="info-container">
+                    <div class="album-title">It Does Not Come Easy</div>
+                    <div class="album-copyright">Copyright 2003</div>
+                    <img src="../images/album covers/easy.png" alt="It Does Not Come Easy cover">
+                </div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 Weepline</div>
+                        <audio src="/music/It Does Not Come Easy/01 Weepline.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 Isolation of a Chosen Man</div>
+                        <audio src="/music/It Does Not Come Easy/02 Isolation of a chosen man.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 Untouched</div>
+                        <audio src="/music/It Does Not Come Easy/03 Untouched.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 Girl 'a' Weeping</div>
+                        <audio src="/music/It Does Not Come Easy/04 Girl a wheeping.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 Mosis, my Holy Spirit</div>
+                        <audio src="/music/It Does Not Come Easy/05 Mosis, my holy spirit.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Shattered Men Still Live</div>
+                        <audio src="/music/It Does Not Come Easy/06 Shattered men still live.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 Shattered Men Continue</div>
+                        <audio src="/music/It Does Not Come Easy/07 Shattered men continue.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Disavow</div>
+                        <audio src="/music/It Does Not Come Easy/08 Disavow.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Prelude to November 25</div>
+                        <audio src="/music/It Does Not Come Easy/09 Prelude to November 25.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 Blood of a Thousand</div>
+                        <audio src="/music/It Does Not Come Easy/10 Blood of a thousand.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">11 Sacrice</div>
+                        <audio src="/music/It Does Not Come Easy/11 Sacrice..mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">12 Upon Waking</div>
+                        <audio src="/music/It Does Not Come Easy/12 Upon Waking.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">13 A Spoken Logic</div>
+                        <audio src="/music/It Does Not Come Easy/13 a Spoken Logic.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">14 Final Acceptance</div>
+                        <audio src="/music/It Does Not Come Easy/14 Final acceptance.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">15 Sovereignty</div>
+                        <audio src="/music/It Does Not Come Easy/15 Sovereignty.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">16 Epilogue</div>
+                        <audio src="/music/It Does Not Come Easy/16 Epilogue.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
             </div>
 
             <div class="album-box hidden" id="loFi1">
-                <div class="album-title">Lo-Fi Apprentice (and that same journal continues) Vol I</div>
-                <div class="album-copyright">Copyright 2005</div>
-                <div class="songs-container"></div>
+                <div class="info-container">
+                    <div class="album-title">Lo-Fi Apprentice (and that same journal continues) Vol I</div>
+                    <div class="album-copyright">Copyright 2005</div>
+                    <img src="../images/album covers/lo-fi-2.jpg" alt="Lo-Fi Apprentice I cover">
+                </div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 From an Epilogue</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/01 From an Epilogue.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 The Breaking Moment</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/02 The Breaking Moment.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 The Seed that Multiplied</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/03 The Seed that Multiplied.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 In the Mud Again</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/04 In the Mud Again.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 Loyalty Memories</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/05 Loyalty Memories.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Salvatioin to Impart</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/06 Salvation to Impart.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 My Yes</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/07 My Yes.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Self Disown</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/08 Self Disown.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Winter's Lyric</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/09 Winter's Lyric.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 November 25, 1991</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/10 November 25, (1991).mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">11 A Speck of Wonder</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/11 A Speck of Wonder.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">12 Sleep Paralysis</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 1/12 Sleep Paralysis.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
             </div>
 
             <div class="album-box hidden" id="loFi2">
-                <div class="album-title">Lo-Fi Apprentice (and that same journal continues) Vol II</div>
-                <div class="album-copyright">Copyright 2005</div>
-                <div class="songs-container"></div>
+                <div class="info-container">
+                    <div class="album-title">Lo-Fi Apprentice (and that same journal continues) Vol II</div>
+                    <div class="album-copyright">Copyright 2005</div>
+                    <img src="../images/album covers/lo-fi-1.jpg" alt="Lo-Fi Apprentice II cover">
+                </div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 There's a Demon Inside my Head</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/01 There's A Demon Inside My Head.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 We Don't Have It</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/02 We Don't Have It.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 Pollution Sought the Purity</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/03 Pollution Sought the Purity.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 Desperate Residence</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/04 desperate residence.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 A Private Poetry Reading</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/05 A Private Poetry Reading.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Winter</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/06 Winter.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 God, The Great Mover of Hearts</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/07 God, The Great Mover of Hearts.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 As I was Smoking One Night, I Noticed a Certain Flicker</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/08 As I was smoking one night, I noticed a certain flicker..mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Extreme Revisited</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/09 Extreme Revisited.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 Brilliant Prelude to a Beautiful Postscript</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/10 Brilliant Prelude to a Beautiful Postscript.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">11 Shamad, Shamad</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/11 Shamad, Shamad.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">12 An Awful Thing</div>
+                        <audio src="/music/The Lo-Fi Apprentice Vol 2/12 An Awful Thing.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
             </div>
 
             <div class="album-box hidden" id="design">
-                <div class="album-title">Design for Growing Callus</div>
-                <div class="album-copyright">Copyright 2000</div>
+                <div class="info-container">
+                    <div class="album-title">Design for Growing Callus</div>
+                    <div class="album-copyright">Copyright 2000</div>
+                    <img src="../images/album covers/design.jpeg" alt="Design for growing callusses cover">
+                </div>
                 <div class="songs-container">
                     <div class="song-box">
                         <div class="song-title">1 Calluses</div>
@@ -452,16 +711,144 @@
                 </div>
             </div>
 
+            <div class="album-box hidden" id="wife">
+                <div class="info-container">
+                    <div class="album-title">Wife Tale</div>
+                    <div class="album-copyright">Copyright 2014</div>
+                    <img src="../images/album covers/wife.png" alt="Wife Tale cover">
+                </div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 Storm Brewing</div>
+                        <audio src="/music/Wife Tale/01 Storm Brewing.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 Meeting</div>
+                        <audio src="/music/Wife Tale/02 Meeting.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 After Thoughts</div>
+                        <audio src="/music/Wife Tale/03 After Thoughts.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 Breaking Plans</div>
+                        <audio src="/music/Wife Tale/04 Breaking Plans.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 First Date</div>
+                        <audio src="/music/Wife Tale/05 First Date.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Pleasant Days</div>
+                        <audio src="/music/Wife Tale/06 Pleasant Days.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 Proposal</div>
+                        <audio src="/music/Wife Tale/07 Proposal.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Until Death</div>
+                        <audio src="/music/Wife Tale/08 Until Death.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Storm Revisited</div>
+                        <audio src="/music/Wife Tale/09 Storm Revisited.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
+            </div>
+
             <div class="album-box hidden" id="virtual">
-                <div class="album-title">Virtual Symphonies</div>
-                <div class="album-copyright">Circa 2002</div>
-                <div class="songs-container"></div>
+                <div class="info-container">
+                    <div class="album-title">Virtual Symphonies</div>
+                    <div class="album-copyright">Circa 2002</div>
+                    <em>Made on Music Generator for Playstation 1</em>
+                    <img src="../images/album covers/virtual.jpg" alt="Virtual Symphonies cover">
+                </div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 24 Hours a Day</div>
+                        <audio src="/music/Virtual Symphonies/02 24 hours a day.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 Almost</div>
+                        <audio src="/music/Virtual Symphonies/03 Almost.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 Shattered Men Continue</div>
+                        <audio src="/music/Virtual Symphonies/04 Shattered men continued.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 Reboot</div>
+                        <audio src="/music/Virtual Symphonies/05 Reboot.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 Glaze</div>
+                        <audio src="/music/Virtual Symphonies/06 Glaze.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 Spoken Logic</div>
+                        <audio src="/music/Virtual Symphonies/07 Spoken Logic.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 Mustard Balm</div>
+                        <audio src="/music/Virtual Symphonies/08 Mustard Balm.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">8 Mysantonian</div>
+                        <audio src="/music/Virtual Symphonies/09 Mysantonian.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">9 Late Arrival</div>
+                        <audio src="/music/Virtual Symphonies/10 Late Arrival.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">10 Gangs of Cleveland</div>
+                        <audio src="/music/Virtual Symphonies/11 Gangs of Cleveland.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">11 Jorder</div>
+                        <audio src="/music/Virtual Symphonies/12 Jorder.m4a" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
             </div>
 
             <div class="album-box hidden" id="miscSongs">
-                <div class="album-title">Misc. Songs</div>
-                <div class="album-copyright">Circa 2008</div>
-                <div class="songs-container"></div>
+                <div class="info-container">
+                    <div class="album-title">Misc. Songs</div>
+                    <div class="album-copyright">Circa 2008</div>
+                    <em>Works in progress that never made it on an album. Or, just silly songs for fun.</em>
+                    <img src="../images/album covers/misc-songs.jpg" alt="Misc. Songs cover">
+                </div>
+                <div class="songs-container">
+                    <div class="song-box">
+                        <div class="song-title">1 A Different Father</div>
+                        <audio src="/music/Misc. Songs/A Different Father.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">2 Indian Giver</div>
+                        <audio src="/music/Misc. Songs/Indian Giver.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">3 Santa Clause</div>
+                        <audio src="/music/Misc. Songs/Santa Clause.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">4 The Academic</div>
+                        <audio src="/music/Misc. Songs/The Academic.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">5 Iliad Synopsis</div>
+                        <audio src="/music/Misc. Songs/Iliad Rap.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">6 My Aria</div>
+                        <audio src="/music/Misc. Songs/My Aria.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                    <div class="song-box">
+                        <div class="song-title">7 Graduation Song</div>
+                        <audio src="/music/Misc. Songs/Graduation.mp3" controls type="audio/mpeg"></audio>
+                    </div>
+                </div>
             </div>
 
         </div>
