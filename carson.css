@@ -8,7 +8,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 a {
@@ -421,6 +421,10 @@ a {
 
 
 /* Music Landing */
+.album-landing {
+  padding-bottom: 145px;
+}
+
 .hero-banner {
   position: relative;
 }
@@ -528,10 +532,24 @@ a {
   margin-bottom: 20px;
 }
 
-.album-landing .songs-container {
+.album-landing .album-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+}
+
+.album-landing .album-box .info-container {
+  margin-right: 75px;
+  width: 400px;
+}
+
+.album-landing .album-box .info-container em {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.album-landing .album-box .info-container img {
+  height: 350px;
+  object-fit: cover;
+  width: 350px;
 }
 
 .album-landing .song-box {
