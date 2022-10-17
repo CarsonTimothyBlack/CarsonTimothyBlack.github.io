@@ -609,5 +609,9 @@ a {
   .album-swiper-arrows {
     visibility: hidden;
   }
+  
+  .album-landing .album-box .info-container em {
+    padding: 0 50px;
+  }
 
 }
