@@ -251,174 +251,6 @@ a {
   width: 150px;
 }
 
-/* Screen Breaks*/
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-
-  .site-section > .container{
-    width: 900px;
-  }
-
-  .container3 .portfolio-items .item-box {
-    height: 220px;
-  }
-
-  .container3 .portfolio-items .item-box:nth-child(1) {
-    height: 170px;
-  }
-
-  .container4 .portfolio-items .item-box:nth-child(1) {
-    height: 370px;
-  }
-
-  .container4 .portfolio-items .item-box:nth-child(2) {
-    height: 345px;
-  }
-
-  .container4 .portfolio-items .item-box:nth-child(3) {
-    height: 255px;
-  }
-
-}
-
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-
-  .site-section > .container{
-    width: 700px;
-  }
-
-  .image-box img {
-    height: 300px;
-    width: 300px;
-  }
-
-  .container2 .image-box {
-    right: 25px;
-  }
-
-  .container5 .value-box .value-item {
-    width: 24%;
-  }
-
-}
-
-@media only screen and (max-width: 991px) {
-
-  .container1 .content-box,
-  .portfolio-items .item-box {
-    height: auto !important;
-    width: auto;
-  }
-
-  .container1 .page-title h1 {
-    font-size: 80px;
-  }
-
-  .site-nav a.nav-link {
-    font-size: 18px;
-  }
-
-  .site-nav a.nav-link:hover {
-    font-size: 19px;
-  }
-
-  .nav-link span,
-  .portfolio-items .item-box a span {
-    font-size: 26px;
-  }
-
-  .container2 .about-me-title,
-  .portfolio-items .item-box .item-title {
-    font-size: 22px;
-  }
-
-  .container2 .about-me,
-  .portfolio-items .item-box a {
-    font-size: 16px;
-  }
-
-  .section-title {
-    font-size: 18px;
-    padding: 12px;
-  }
-
-  .container2 .contact-box {
-    font-size: 20px;
-  }
-
-  .container2 .contact-box .contact-item:nth-child(2) {
-    left: 175px;
-  }
-
-  .image-box {
-    left: 0;
-    right: 0;
-  }
-
-}
-
-@media only screen and (max-width: 767px) {
-
-  .site-section {
-    padding: 45px;
-  }
-
-  .site-section > .container {
-    flex-direction: column;
-    width: auto;
-  }
-
-  .container1 .content-box,
-  .container3 .content-box {
-    order: 2;
-  }
-
-  .container1 .page-title h1 {
-    font-size: 70px;
-    text-align: center;
-  }
-
-  .container1 .page-title h1 br {
-    display: none;
-  }
-
-  .site-nav a.nav-link {
-    height: auto;
-    margin-bottom: 8px;
-  }
-
-  .image-box {
-    text-align: center;
-  }
-
-  .image-box img {
-    height: auto;
-    margin-bottom: 40px;
-    width: 100%;
-  }
-
-  .content-box {
-    padding: 0 !important;
-  }
-
-  .container2 .contact-box .contact-item {
-    position: relative;
-  }
-
-  .container2 .contact-box .contact-item:nth-child(2) {
-    left: 50px;
-  }
-
-  .container5 .value-box .value-item {
-    padding: 15px;
-    width: 100%;
-  }
-
-  .container5 .value-box .value-item img {
-    width: 120px;
-  }
-
-}
-
 
 /* Music Landing */
 .album-landing {
@@ -438,8 +270,7 @@ a {
   z-index: 2;
 }
 
-.hero.text {
-  font-family: 'Space Mono';
+.hero-text {
   font-size: 76px;
   left: 45px;
   position: absolute;
@@ -559,4 +390,224 @@ a {
 .album-landing .song-title {
   font-family: 'Space Mono';
   margin-bottom: 10px;
+}
+
+/* Screen Breaks*/
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+
+  .site-section > .container,
+  .album-container {
+    width: 900px;
+  }
+
+  .container3 .portfolio-items .item-box {
+    height: 220px;
+  }
+
+  .container3 .portfolio-items .item-box:nth-child(1) {
+    height: 170px;
+  }
+
+  .container4 .portfolio-items .item-box:nth-child(1) {
+    height: 370px;
+  }
+
+  .container4 .portfolio-items .item-box:nth-child(2) {
+    height: 345px;
+  }
+
+  .container4 .portfolio-items .item-box:nth-child(3) {
+    height: 255px;
+  }
+
+  .hero-banner img,
+  .hero-overlay {
+    height: 450px;
+  }
+
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+
+  .site-section > .container,
+  .album-container {
+    width: 700px;
+  }
+
+  .image-box img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .container2 .image-box {
+    right: 25px;
+  }
+
+  .container5 .value-box .value-item {
+    width: 24%;
+  }
+
+  .hero-text {
+    top: 120px;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+  .container1 .content-box,
+  .portfolio-items .item-box {
+    height: auto !important;
+    width: auto;
+  }
+
+  .hero-banner img,
+  .hero-overlay {
+    height: 350px;
+  }
+
+  .container1 .page-title h1 {
+    font-size: 80px;
+  }
+
+  .site-nav a.nav-link {
+    font-size: 18px;
+  }
+
+  .site-nav a.nav-link:hover {
+    font-size: 19px;
+  }
+
+  .nav-link span,
+  .portfolio-items .item-box a span {
+    font-size: 26px;
+  }
+
+  .container2 .about-me-title,
+  .portfolio-items .item-box .item-title {
+    font-size: 22px;
+  }
+
+  .container2 .about-me,
+  .portfolio-items .item-box a {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .container2 .contact-box {
+    font-size: 20px;
+  }
+
+  .container2 .contact-box .contact-item:nth-child(2) {
+    left: 175px;
+  }
+
+  .image-box {
+    left: 0;
+    right: 0;
+  }
+
+  .swiper-android .swiper-slide,
+  .swiper-wrapper {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .site-section {
+    padding: 45px;
+  }
+
+  .site-section > .container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .album-container {
+    width: 100%;
+  }
+
+  .container1 .content-box,
+  .container3 .content-box {
+    order: 2;
+  }
+
+  .container1 .page-title h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .hero-text {
+    font-size: 60px;
+    padding: 35px 0;
+    position: static;
+    text-align: center;
+  }
+
+  .container1 .page-title h1 br {
+    display: none;
+  }
+
+  .site-nav a.nav-link {
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .image-box {
+    text-align: center;
+  }
+
+  .image-box img {
+    height: auto;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .content-box {
+    padding: 0 !important;
+  }
+
+  .container2 .contact-box .contact-item {
+    position: relative;
+  }
+
+  .container2 .contact-box .contact-item:nth-child(2) {
+    left: 50px;
+  }
+
+  .container5 .value-box .value-item {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .container5 .value-box .value-item img {
+    width: 120px;
+  }
+
+  .album-landing .album-box {
+    display: block;
+    text-align: center;
+  }
+
+  .album-landing .album-box .info-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .album-landing .album-box .info-container img {
+    height: 200px;
+    margin-bottom: 30px;
+    width: 200px;
+  }
+
+  .album-swiper-arrows {
+    visibility: hidden;
+  }
+
 }
