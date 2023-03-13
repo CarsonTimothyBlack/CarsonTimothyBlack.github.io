@@ -33,6 +33,10 @@ a {
   width: 400px;
 }
 
+.container1 .image-box img {
+  border-radius: 50%;
+}
+
 .site-section {
   border-bottom: 10px solid #939393;
   padding: 100px 30px;
@@ -121,7 +125,8 @@ a {
   margin-bottom: 15px;
 }
 
-.container2 .about-me {
+.container2 .about-me,
+.container4 .education-description {
   font-family: 'Space Mono';
   font-size: 20px;
   letter-spacing: 2px;
@@ -131,6 +136,14 @@ a {
 
 .container2 .section-title {
   margin-top: 35px;
+}
+
+.education-link {
+  color: #f4b325;
+}
+
+.education-link:hover {
+  text-decoration: underline;
 }
 
 .container2 .contact-box {
@@ -224,6 +237,60 @@ a {
 
 .container4 .portfolio-items .item-box a span {
   color: #f4b325;
+}
+
+section.education-section {
+  padding-right: 50px;
+}
+
+.education-section .education-title {
+  font-size: 24px;
+}
+
+.education-section ul {
+  padding: 0;
+}
+
+.education-section ul li,
+.education-section ul li .course-link {
+  padding: 5px;
+}
+
+section.education-section.projects .item-box  {
+  margin-bottom: 25px;
+}
+
+section.education-section.courses ul li,
+section.education-section .item-title  {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+section.education-section .item-description {
+  padding-top: 8px;
+}
+
+section.education-section.courses ul li .course-link {
+  font-size: 16px;
+  text-transform: none;
+}
+
+section.education-section ul li a {
+  padding: 5px 0;
+  transition: all ease .5s;
+}
+
+section.education-section .item-box > a {
+  transition: all ease .5s;
+}
+section.education-section .item-box > a:hover {
+  color: #f4b325;
+  font-size: 17px;
+}
+
+section.education-section ul li a:hover {
+  color: #f4b325;
+  font-size: 17px;
 }
 
 /* Core Values */
@@ -567,6 +634,10 @@ a {
     height: auto;
     margin-bottom: 40px;
     width: 100%;
+  }
+
+  .container1 .image-box img {
+    border-radius: 0;
   }
 
   .content-box {

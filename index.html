@@ -7,10 +7,12 @@
     <meta name="author" content="Carson Timothy Black">
     <title>Carson Timothy Black - Front-end Software Engineer</title>
     <link rel="stylesheet" type="text/css" href="carson.css">
+    <link rel="stylesheet" type="text/css" href="mini_bootstroop.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
   </head>
   <body>
     <div class="container1 site-section">
@@ -22,12 +24,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           <div class="site-nav">
             <a class="nav-link" href="#aboutMe"><span class="material-symbols-outlined">north_east</span>About Me</a>
             <a class="nav-link" href="#professional"><span class="material-symbols-outlined">north_east</span>Professional Portfolio</a>
-            <a class="nav-link" href="#personal"><span class="material-symbols-outlined">north_east</span>Personal Projects</a>
+            <a class="nav-link" href="#personal"><span class="material-symbols-outlined">north_east</span>Education and Projects</a>
             <a class="nav-link" href="#coreValues"><span class="material-symbols-outlined">north_east</span>My Core Values</a>
           </div>
         </div>
         <div class="image-box">
-          <img class="img-responsive" src="images/carsonmarry.jpg" alt="placeholder">
+          <img class="img-responsive" src="images/profile_pic.jpg" alt="placeholder">
         </div>
       </div>
     </div>
@@ -43,7 +45,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             About Me
           </div>
           <div class="about-me">
-            I am an enthusiastic and experienced Front-end developer with a tenacious appetite to learn new technologies. It has been a long-term goal of mine to break into a professional Full Stack position, where I can truly dig into the abstract, server-side of programming. I am eager to continue developing my Front-end skills, while rigorously deepening my knowledge of Back-end technologies.
+            I am an enthusiastic and experienced Front-end developer with a tenacious appetite to learn new technologies. It has been a long-term goal of mine to break into a professional Full Stack position, where I can truly dig into the abstract, server-side of programming. I am eager to continue developing my Front-end skills, while rigorously deepening my knowledge of Back-end technologies. View my <a href="#personal" class="education-link">ongoing education</a> below, for more details.
           </div>
           <div class="section-title">
             Contact
@@ -103,6 +105,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                 </div>
               </a>
             </div>
+            <div class="item-box">
+              <a href="https://www.trinityhealthmichigan.org/" target="_blank">
+                <span class="material-symbols-outlined">
+                  north_east
+                  </span>
+                <div class="item-info">
+                  <div class="item-title">Trinity Health Michigan</div>
+                  <div class="item-description">
+                    I was lead developer for Trinity Michigan's redesign, and consolidation of 8 smaller sites. The site contains an overhaul of the site search, service finder, and media center experiences, as well as several new and advanced components.</div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="image-box">
@@ -119,9 +133,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         </div>
         <div class="content-box">
           <div class="section-title">
-            Personal Projects
+            Ongoing Education and Personal Projects
           </div>
-          <div class="portfolio-items">
+          <div class="education-description">
+            <p>With around 5 years of experience as a Web Engineer, I still strive to maintain a humble attitude and a willingness to learn new things. I believe in being transparent and honest about my abilities...or lack thereof.</p>
+            <p>In that spirit, I have, below, included links to certificates I've earned by completing courses, as well as a list of courses I am currently taking, with github links that I regularly update, as I progress through them. I have also included some links to already completed personal projects.</p>
+          </div>
+          <!--<div class="portfolio-items">
             <div class="item-box">
               <a href="https://carsontimothyblack.github.io/StoryMaker-2000/" target="_blank">
                 <span class="material-symbols-outlined">
@@ -169,6 +187,68 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                 </div>
               </a>
             </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="container education-info">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <section class="education-section">
+              <h3 class="education-title">Certificates Earned</h3>
+              <ul>
+                <li><a href="docs/JavaScript_Certificate.pdf" target="_blank">Modern JavaScript From the Beginning</a></li>
+                <li><a href="docs/jquery_certificate.pdf" target="_blank">Complete jQuery Course: From Beginner to Advanced</a></li>
+                <li><a href="docs/Software_Engineer_Certificate.pdf" target="_blank">Software Engineering 101: Plan and Execute Better Software</a></li>
+                <li><a href="docs/Typescript_certificate.pdf" target="_blank">Typescript: The Complete Developer's Guide</a></li>
+                <li><a href="docs/Web-Developer-Certificate.pdf" target="_blank">The Web Developer Bootcamp 2021</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <section class="education-section courses">
+              <h3 class="education-title">Current Learning Path</h3>
+              <ul>
+                <li>Ruby
+                  <div class="course-link"><a href="https://www.udemy.com/course/learn-to-code-with-ruby-lang/">Course Description</a></div>
+                  <div class="course-link"><a href="https://github.com/CarsonTimothyBlack/Ruby-Learning">Github Progress Tracking</a></div>
+                </li>
+                <li>React.js
+                  <div class="course-link"><a href="https://www.udemy.com/course/react-redux/">Course Description</a></div>
+                  <div class="course-link"><a href="https://github.com/CarsonTimothyBlack/React-Course-Projects">Github Progress Tracking</a></div>
+                </li>
+                <li>Ruby on Rails (After completion of Ruby course)
+                  <div class="course-link"><a href="https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/">Course Description</a></div>
+                  <!-- <div class="course-link"><a href="https://github.com/CarsonTimothyBlack/Ruby-Learning">Github Progress Tracking</a></div> -->
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <section class="education-section projects">
+              <h3 class="education-title">Personal Projects</h3>
+              <div class="item-box">
+                <a href="music/music-landing.html">
+                  <div class="item-info">
+                    <div class="item-title">Home Recordings</div>
+                    <div class="item-description">
+                      I wasn't always a Web Engineer. No! For a long time, I wanted to be a professional musician. But, I didn't really want to do more than just record music. So, I did. Quite often. At home. This page is an archive of home recorded albums between 1996 and 2015.</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="item-box">
+                <a href="https://carsontimothyblack.github.io/Blackjack-Story/" target="_blank">
+                  <div class="item-info">
+                    <div class="item-title">Blackjack</div>
+                    <div class="item-description">
+                      A more recent project. I don't often get a chance to program a full application, but have a dream of doing some game development. This was a challenge to myself to see if I could use my JS experience to re-create a basic game of Blackjack. Eventually, I want to add a story element to it. For example, after 5 hands, you can order a drink. After a couple drinks, your "Hit" or "Stand" buttons don't always do what you want them to.</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            </section>
           </div>
         </div>
       </div>
