@@ -187,14 +187,6 @@ a {
   padding-right: 75px;
 }
 
-.container3 .portfolio-items .item-box:nth-child(1) {
-  height: 140px;
-}
-
-.container3 .portfolio-items .item-box {
-  height: 165px;
-}
-
 .container3 .portfolio-items .item-box a:hover {
   color: #059fbd;
   font-size: 19px;
